@@ -45,7 +45,7 @@ function load(id, opts, fn) {
     initialized = true;
     delete window.fbAsyncInit;
     for (var i = 0, n = callbacks.length; i < n; i++) {
-      callbacks[i](FB);
+      callbacks[i](null, FB);
     }
     callbacks = undefined;
   };
